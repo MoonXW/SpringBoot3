@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"></meta>
+  <title>Example Object </title>
+</head>
+<body>
+<div>
+  <h1>对象取值</h1>
+  <table>
+    <tr>
+      <td th:text="${user.name}"></td>
+      <td th:text="${user.age}"></td>
+      <td th:text="${user.pass}"></td>
+    </tr>
+    <tr th:object="${user}">
+      <td th:text="*{name}"></td>
+      <td th:text="*{age}"></td>
+      <td th:text="*{pass}"></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

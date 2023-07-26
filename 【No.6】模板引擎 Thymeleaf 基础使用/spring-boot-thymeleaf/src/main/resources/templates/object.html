@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"></meta>
+  <title>Example object </title>
+</head>
+<body>
+<div>
+  <h1>基本对象</h1>
+  <span th:text="${request.getAttribute('reqParam')}">xxx</span>
+  <br/>
+  <span th:text="${session.userName}">xxx</span>
+  <br/>
+  Established locale country: <span th:text="${#locale.country}">xxx</span>.
+
+</div>
+</body>
+</html>
